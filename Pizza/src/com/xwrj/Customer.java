@@ -2,9 +2,9 @@ package com.xwrj;
 //顾客实体类
 public class Customer {
 	public static void main(String[] args) {
-		FuzhouPizza fuzhouPizza = new FuzhouPizza();
+		FzPizzaStore fuzhouPizza = new FzPizzaStore();
 		fuzhouPizza.orderPizza("fruit");
-		XiamenPizza xiamenPizza = new XiamenPizza();
+		XmPizzaStore xiamenPizza = new XmPizzaStore();
 		xiamenPizza.orderPizza("beef");
 		fuzhouPizza.orderPizza("shrimp");
 	}

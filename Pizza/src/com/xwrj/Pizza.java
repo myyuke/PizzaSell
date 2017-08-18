@@ -5,9 +5,11 @@ public abstract class Pizza {
 	    String dough;  
 	    String sauce;   
 	    void  prepare() {   
-	        System.out.println("Preparing "  + name);   
-	        System.out.println("Tossing dough..." );   
-	        System.out.println("Adding sauce..." );   
+	    	StringBuffer display = new  StringBuffer();   
+	        display.append("---- "  + name +  " ----\n" );   
+	        display.append("面团:  "+dough + "\n" );   
+	        display.append("佐料："+sauce + "\n" );  
+	        System.out.println(display);
 	    }  
 	    //抽象Pizza制作方法
 	    abstract void  bake(); 
@@ -16,9 +18,9 @@ public abstract class Pizza {
 	    public  String getName() { return  name;}   
 	    public  String toString() {   
 	        StringBuffer display = new  StringBuffer();   
-	        display.append("---- "  + name +  " ----/n" );   
-	        display.append(dough + "/n" );   
-	        display.append(sauce + "/n" );   
+	        display.append("---- "  + name +  " ----\n" );   
+	        display.append("面团:  "+dough + "\n" );   
+	        display.append("佐料："+sauce + "\n" );   
 	        return  display.toString();   
 	    }  
 }
